@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --bg-color:#0a60b5;
+    --bg-white:rgb(234, 228, 228);
+    --border-color:#9509e0;
+}
+body{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--bg-color);
+}
+
+.wrapper{
+  background-color:blue;
+  border-radius: 10px;
+  padding: 30px;
+}
+.qr-header h1{
+    font-size: 26px;
+    text-align: center;
+    color: black;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.qr-header input{
+    width: 100%;
+    margin-block: 10px;
+
+}
+.qr-header input, select{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid var(--border-color);
+
+}
+.qr-header label{
+    color: black;
+
+    font-size: 20px;
+
+}
+.qr-header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qr-footer{
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+}
+.qr-footer a{
+    background-color:  rgb(19, 227, 227);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 25px;
+    margin-inline: 4px;
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.qr-body{
+    display: grid;
+    place-items: center;
+    padding: 16px;
+
+}
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-block:10px;
+    padding: 12px;
+    border: 0.5px solid white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:520px){
+    .wrapper{
+        width: 80%;
+    }
+    .qr-header h1{
+        font-size: 20px;
+        
+    }
+    .qr-footer a{
+        padding: 12px;
+        font-size: 12px;
+    }
+    .qr-header select{
+        padding: 4px;
+        border-radius: 10px;
+        font-size: 12px;
+        border: 2px solid var(--border-color);
+    
+    }
+    .qr-header input{
+        font-size: 12px;
+    }
+    .qr-header label{
+        color: black;
+    
+        font-size: 14px;
+    
+    }
+    .qr-body{
+        display: grid;
+        place-items: center;
+        padding: 10px;
+    
+    }
+    .qr-body img{
+       
+        
+        padding: 10px;
+        border: 0.5px solid white;
+        border-radius: 10px;
+    }
+
+}
